@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>missns</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/top.css" media="screen and (min-width: 1081px)">
+<link rel="stylesheet" href="css/top_1080.css" media="screen and (max-width: 1080px)">
+<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header_top">
+			<div class="header_top_logo">
+				<a href="index.html"><img src="images/logo/logo.svg" alt="ロゴ画像"></a>
+			</div>
+			<nav class="header_nav">
+				<ul>
+					<li class="line"><a style="color: #662D91;" href="index.html"><h5>MISSNSとは</h5></a></li>
+					<li><a href="main.html"><h5>図鑑</h5></a></li>
+					<li><a href="ranking.php"><h5>ダメねランキング</h5></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header_main">
+			<div class="header_main_back_img"><img src="./images/logo/top_back.svg" alt="top_image"></div>
+		</div>
+		<div class="scroll">
+			<div class="allow"><span></span>Scroll</div>
+		</div>
+	</header>
+	<div class="modal"></div>
+		<main class="main">
+			<div class="main_contents" id="block01">
+				<h3 class="main_contents_title" id="main_contents_title_1">MISSNSとは</h3>
+				<div class="main_contents_text_box">
+				</div>
+				<div class="main_contents_text_top">
+					<h4><b>MISSNS(ミスヌス)</b>は、<br>SNSに存在している様々なミスリプ(クソリプ)を一覧できる図鑑サイトです。</h4>
+					<h4>このサイトではミスリプをジャンルごとにまとめて、その例を見ることができます。</h4>
+				</div>
+			</div>
+			<div class="main_contents" id="block02">
+				<h3 class="main_contents_title">ミスリプとは</h3>
+				<div class="main_contents_text_box">
+				</div>
+				<div class="main_contents_text_top">
+					<h4>近年ITの発達で、言葉よりも文章でメッセージを取り合うことが多くなりました。</h4>
+					<h4>中でもSNSと呼ばれる世界では他人とコミュニケーションを取れることもあり、返信された側からは迷惑なメッセージ(クソリプ)をもらうことが多くあります。</h4>
+					<h4>それが<b>ミスリプ</b>と呼ばれるものです。</h4>
+					<h4>そのミスリプはなぜ発生するのかを調べた結果、送り手側と受け取り手側で文章の解釈がズレている時、わざと迷惑なメッセージを送った際にこの現象起きやすいことが分かりました。</h4>
+					<h4>本サイトはミスリプは頻繁に発生する現象であるために、オンラインコミュニケーション取っていく上で知っておくべき重要な情報だと考え、このMISSNSを作成しました。</h4>
+				</div>
+			</div>
+		</main>
+	<footer class="footer">
+		<nav class="footer_nav">
+			<ul>
+				<li class="line"><a style="color: #662D91;" href="index.html"><h6>MISSNSとは</h6></a></li>
+				<li><a href="main.html"><h6>図鑑</h6></a></li>
+				<li><a href="ranking.php"><h6>ダメねランキング</h6></a></li>
+			</ul>
+			<small class="footer_nav_right">(c)missns by keigo fukushima</small>
+		</nav>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/create_modal.js"></script>
+	<script type="text/javascript" src="js/fade_anime.js"></script>
+	<script type="text/javascript" src="js/t.min.js"></script>
+	<script type="text/javascript" src="js/typer.js"></script>
+	<script type="text/javascript" src="ajax/insert.js"></script>
+	<script type="text/javascript" src="ajax/delete.js"></script>
+	<script type="text/javascript" src="js/remove.js"></script>
+</body>
+
+</html>

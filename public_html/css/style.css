@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+.list_item{
+	animation: pulse 1s linear infinite both;
+}
+/* グローバル設定 ********************/
+html{
+	font-size: 62.5%;
+	font-size: normal;
+}
+body{
+	font-family: "ヒラギノ丸ゴ ProN","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","游ゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",Helvetica, Arial, "Hiragino Kaku Gothic ProN", sans-serif,"ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro",helvetica,"Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+	/* background-color: #fbfbfd; */
+	background-color: #fff;
+	color: #4D4D4D;
+	min-width: 320px;
+}
+h1{
+	font-size: 14rem;
+	line-height: 24rem;
+}
+h2{
+	font-size: 9.2rem;
+	letter-spacing: 0.2rem;
+}
+h3{
+	font-size: 4.7rem;
+	line-height: 5.5rem;
+	font-weight: 100;
+	letter-spacing: 0.5rem;
+}
+h4{
+	font-size: 2.8rem;
+	font-family: "游ゴシック体", YuGothic;
+	font-weight: 100;
+	line-height: 4.5rem;
+	letter-spacing: 0.1rem;
+}
+h5{
+	font-size: 2.2rem;
+	line-height: 2.5rem;
+	font-weight: 100;
+}
+h6{
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 100;
+}
+p{
+	font-size: 3rem;
+	line-height: 3rem;
+}
+li{
+	/* font-size: 2.2rem; */
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #8A43C6;
+}
+small{
+	font-size: 1.2rem;
+}
+nav ul li:hover{
+	opacity: 0.8;
+}
+/* ヘッダー */
+.header{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	background-image: url(../images/logo/gallery_back.svg);
+	background-repeat: no-repeat;
+	background-size: 1100px;
+	background-position: -5vw 15vh;
+}
+.header_top{
+	width: 100%;
+	margin-top: 20px;
+	position: relative;
+}
+.header_top_logo{
+	position: absolute;
+	top: 1rem;
+	left: 5%;
+}
+.header_top_logo img{
+	width: 70%;
+}
+.header_top nav{
+	margin: 0 auto;
+	width: 50%;
+}
+.header_top nav ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+}
+.header_top nav ul li{
+	min-width: 33%;
+}
+.header_main_back_img{
+	width: 65vw;
+	height: auto;
+	/* transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%); */
+}
+.header_main_text{
+	width: 100%;
+	margin: auto;
+	margin-top: 30px;
+}
+.header_main_text h1{
+	font-weight: bolder;
+	color: #8A43C6;
+	letter-spacing: 2rem;
+}
+.header_main_text h3{
+	line-height: 8.5rem;
+}
+.header_main_text h3 span{
+	font-size: 8.2rem;
+	line-height: 12rem;
+	color: #8A43C6;
+}
+.header_main{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 45%;
+	left: 50%;
+	width: 100vw;
+	margin:  auto;
+}
+.question{
+	position: fixed;
+	cursor: pointer;
+	top: 93vh;
+	left: 95vw;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.question img{
+	max-width: 5rem;
+	height: auto;
+}
+/* アニメーション */
+.header_main{
+	opacity: 0;
+	/* top: 40%; */
+	transition: all .8s ease;
+}
+.header_main.show{
+	opacity: 1;
+	/* top: 50%; */
+	/* transform: none; */
+}
+
+/* メインセクション */
+.main{
+	width: 75%;
+	margin: 10rem auto;
+}
+/* サブタイトル */
+.main_contents{
+	margin-bottom: 15rem;
+}
+.main_contents_title{
+	display: none;
+	color: #8A43C6;
+}
+/* サブテキスト */
+.main_contents_text_box{
+	/* display: inline-block; */
+	background-color: #8A43C6;
+	width: 100vw;
+	/* height: 2vh; */
+	/* ここで背景の色をwindow幅いっぱいまで広げてる*/
+	margin: 0 calc(50% - 50vw);
+	margin-bottom: 6rem;
+}
+.main_contents_text{
+	width: 75vw;
+	margin: 0 auto;
+	padding: 1rem 0;
+	color: #fff;
+}
+/* アニメーション */
+.main_contents{
+	opacity: 0;
+	transform: translate(0, 50px);
+	transition: all .8s ease;
+}
+.main_contents.show{
+	opacity: 1;
+	transform: none;
+}
+/* リスト */
+.list_container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 4rem 5rem;
+}
+.list_container .modal{
+	/* ここでガクンとならなくなる */
+	height: 20rem;
+}
+.list_item{
+	/* border: #9e3d8a 1px solid; */
+	position: relative;
+	height: 100%;
+	white-space: wrap;
+	cursor: pointer;
+	border: rgba(158, 61, 138, 0.3) solid 1px;
+}
+/* listテキスト */
+.list_item_text{
+	position: absolute;
+	text-align: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.list_item_text{
+	font-family: "游ゴシック体","YuGothic";
+	font-size: 2rem;
+	/* .list_item_textのh4をh5に変更してもいいかもしれない */
+}
+/* リストアイテム */
+.list_item:hover{
+	border: 0px;
+}
+.list_item::before,.list_item::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.list_item::before{
+	/* border-top: solid 3px #9e3d8a;
+	border-left: solid 3px #9e3d8a; */
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	opacity: 0.3;
+}
+.list_item:hover::before{
+	border-top: solid 3px #000;
+	border-left: solid 3px #000;
+	width: 3rem;
+	height: 3rem;
+	top: 15%;
+	left: 15%;
+	transition: 0.5s;
+	opacity: 0.3;
+}
+.list_item::after{
+	/* border-right: solid 3px #9e3d8a;
+	border-bottom: solid 3px #9e3d8a; */
+	bottom: 0;
+	right: 0;
+	transition: 0.5s;
+	opacity: 0.3;
+}
+.list_item:hover::after{
+	border-right: solid 3px #000;
+	border-bottom: solid 3px #000;
+	width: 3rem;
+	height: 3rem;
+	bottom: 15%;
+	right: 15%;
+	transition: 0.5s;
+	opacity: 0.3;
+}
+/* フッター */
+.footer{
+	margin-top: 20rem;
+}
+.footer_nav{
+	width: 75%;
+	display: flex;
+	margin-left: 12.5%;
+	justify-content: space-between;
+}
+.footer_nav ul{
+	display: flex;
+	width: 55%;
+	margin-bottom: 5rem;
+	justify-content: space-between;
+}
+.footer_nav_light{
+	width: 45%;
+	text-align: right;
+}

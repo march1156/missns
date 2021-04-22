@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>missns</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" media="screen and (min-width: 1081px)">
+<link rel="stylesheet" href="css/style_1080.css" media="screen and (max-width: 1080px)">
+<!-- <link rel="stylesheet" href="css/style_1080.css" media="screen and (max-width: 1080px)"> -->
+<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/modal.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header_top">
+			<div class="header_top_logo">
+				<a href="index.html"><img src="images/logo/logo.svg" alt="logo"></a>
+			</div>
+			<nav class="header_nav">
+				<ul>
+					<li><a href="index.html"><h5>MISSNSとは</h5></a></li>
+					<li class="line"><a style="color: #662D91;" href="#"><h5>図鑑</h5></a></li>
+					<li><a href="ranking.php"><h5>ダメねランキング</h5></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header_main">
+			<div class="header_main_back_img">
+			</div>
+			<div class="header_main_text">
+				<h1>図鑑</h1>
+				<h3>
+				ここでは様々なSNS上で収集した<br>
+				<span>ミスリプ</span>を<br>
+				例とともに参照できます</h3>
+			</div>
+		</div>
+		<div class="scroll">
+			<div class="allow"><span></span>Scroll</div>
+		</div>
+		<div class="question">
+			<img src="images/icon/question.svg" alt="help_guide" onclick="guide(0)">
+		</div>
+	</header>
+	<div class="modal"></div>
+		<main class="main">
+			<!-- 1 -->
+			<div class="main_contents" id="block01">
+				<h2 class="main_contents_title" id="main_contents_title_1">#おばかリプ</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">純粋な悪口や見当違いな内容のミスリプ。<br>中には悪気なく送っているものもあるが、受取手には悪口に聞こえてしまうこともある。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(1)"><div class="list_item"><h4 class="list_item_text">趣味主体</h4></div></li>
+							<li class="modal" onclick="Modal(2)"><div class="list_item"><h4 class="list_item_text">デカイ声</h4></div></li>
+							<li class="modal" onclick="Modal(3)"><div class="list_item"><h4 class="list_item_text">彼氏欲しい</h4></div></li>
+							<li class="modal" onclick="Modal(4)"><div class="list_item"><h4 class="list_item_text">引きこもる</h4></div></li>
+							<li class="modal" onclick="Modal(5)"><div class="list_item"><h4 class="list_item_text">捨てられない</h4></div></li>
+							<li class="modal" onclick="Modal(6)"><div class="list_item"><h4 class="list_item_text">いい感じ</h4></div></li>
+							<li class="modal" onclick="Modal(7)"><div class="list_item"><h4 class="list_item_text">彼氏とご飯</h4></div></li>
+							<li class="modal" onclick="Modal(8)"><div class="list_item"><h4 class="list_item_text">指</h4></div></li>
+							<li class="modal" onclick="Modal(9)"><div class="list_item"><h4 class="list_item_text">車の色</h4></div></li>
+							<li class="modal" onclick="Modal(10)"><div class="list_item"><h4 class="list_item_text">やめてください</h4></div></li>
+						</ul>
+			</div>
+			<!-- 2 -->
+			<div class="main_contents" id="block02">
+				<h2 class="main_contents_title" id="main_contents_title_2">#ミスリプおじさん</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">女の子やアイドルなどのTwitterやSNSに現れるおじさん。<br>特に絵文字を多用してメッセージを送ってくる。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(11)"><div class="list_item"><h4 class="list_item_text">おはようございます</h4></div></li>
+							<li class="modal" onclick="Modal(12)"><div class="list_item"><h4 class="list_item_text">ライブ</h4></div></li>
+							<li class="modal" onclick="Modal(13)"><div class="list_item"><h4 class="list_item_text">講演</h4></div></li>
+						</ul>
+			</div>
+			<!-- 3 -->
+			<div class="main_contents" id="block03">
+				<h2 class="main_contents_title" id="main_contents_title_3">#FF外から失礼します</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">「FF外から失礼します」と一言添えて言葉を述べる人。<br>善意でメッセージを送ってくる人も多いが、受取手にはミスリプとして認識されることも多くある。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(14)"><div class="list_item"><h4 class="list_item_text">学校</h4></div></li>
+							<li class="modal" onclick="Modal(15)"><div class="list_item"><h4 class="list_item_text">飲み</h4></div></li>
+							<li class="modal" onclick="Modal(16)"><div class="list_item"><h4 class="list_item_text">おでん</h4></div></li>
+							<li class="modal" onclick="Modal(17)"><div class="list_item"><h4 class="list_item_text">また行こうね！</h4></div></li>
+							<li class="modal" onclick="Modal(18)"><div class="list_item"><h4 class="list_item_text">半熟</h4></div></li>
+						</ul>
+			</div>
+			<!-- 4 -->
+			<div class="main_contents" id="block04">
+				<h2 class="main_contents_title" id="main_contents_title_4">#決めつけ</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">自分の感想などに、決めつけた一言を送ってくる。<br>伝え方が高圧的なため、ほぼほぼミスリプとして認識される。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(19)"><div class="list_item"><h4 class="list_item_text">カーテン</h4></div></li>
+							<li class="modal" onclick="Modal(20)"><div class="list_item"><h4 class="list_item_text">痩せなきゃ</h4></div></li>
+							<li class="modal" onclick="Modal(21)"><div class="list_item"><h4 class="list_item_text">M1</h4></div></li>
+							<li class="modal" onclick="Modal(22)"><div class="list_item"><h4 class="list_item_text">番組</h4></div></li>
+							<li class="modal" onclick="Modal(23)"><div class="list_item"><h4 class="list_item_text">深夜にご飯</h4></div></li>
+							<li class="modal" onclick="Modal(24)"><div class="list_item"><h4 class="list_item_text">晩ご飯</h4></div></li>
+						</ul>
+			</div>
+			<!-- 5 -->
+			<div class="main_contents" id="block05">
+				<h2 class="main_contents_title" id="main_contents_title_5">#自分語り</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">全く聞いていないのにもかかわらず、リプライに自分の意見・感想など自分語りを言ってくる。<br>送った側が迷惑と認識していないことも多い。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(25)"><div class="list_item"><h4 class="list_item_text">剣道</h4></div></li>
+							<li class="modal" onclick="Modal(26)"><div class="list_item"><h4 class="list_item_text">眠気</h4></div></li>
+							<li class="modal" onclick="Modal(27)"><div class="list_item"><h4 class="list_item_text">この店</h4></div></li>
+							<li class="modal" onclick="Modal(28)"><div class="list_item"><h4 class="list_item_text">この色</h4></div></li>
+						</ul>
+			</div>
+			<!-- 6 -->
+			<div class="main_contents" id="block06">
+				<h2 class="main_contents_title" id="main_contents_title_6">#謎リプ</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">返信してくるメッセージでも、読んでもよく分からないメッセージを送られてくる。<br>自身の存在を認識してほしいために、送ってくることもある。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(29)"><div class="list_item"><h4 class="list_item_text">友人と</h4></div></li>
+							<li class="modal" onclick="Modal(30)"><div class="list_item"><h4 class="list_item_text">旅行</h4></div></li>
+							<li class="modal" onclick="Modal(31)"><div class="list_item"><h4 class="list_item_text">お互いの気持ち</h4></div></li>
+							<li class="modal" onclick="Modal(32)"><div class="list_item"><h4 class="list_item_text">こういう人</h4></div></li>
+							<li class="modal" onclick="Modal(33)"><div class="list_item"><h4 class="list_item_text">お仕事</h4></div></li>
+							<li class="modal" onclick="Modal(34)"><div class="list_item"><h4 class="list_item_text">プレゼン</h4></div></li>
+							<li class="modal" onclick="Modal(35)"><div class="list_item"><h4 class="list_item_text">絵</h4></div></li>
+						</ul>
+			</div>
+			<!-- 7 -->
+			<div class="main_contents" id="block07">
+				<h2 class="main_contents_title" id="main_contents_title_7">#誤字夢中</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">誤字に対して異常に厳しい人たち。<br>親切心で指摘することもあるので、そこの見極めが難しい</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(36)"><div class="list_item"><h4 class="list_item_text">前の仕事</h4></div></li>
+							<li class="modal" onclick="Modal(37)"><div class="list_item"><h4 class="list_item_text">ヤバイ</h4></div></li>
+						</ul>
+			</div>
+			<!-- 8 -->
+			<div class="main_contents" id="block08">
+				<h2 class="main_contents_title" id="main_contents_title_8">#不謹慎ハンター</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">少しでも不謹慎だと思うと、メッセージを知らない人であっても送ってくる。<br>本当に不謹慎だと炎上に発展するケースもあるが、時間がかなり経っていても不謹慎だと言ってくることもある。芸能人などによく起きやすい。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(38)"><div class="list_item"><h4 class="list_item_text">お寿司</h4></div></li>
+							<li class="modal" onclick="Modal(39)"><div class="list_item"><h4 class="list_item_text">元気</h4></div></li>
+							<li class="modal" onclick="Modal(40)"><div class="list_item"><h4 class="list_item_text">SNS</h4></div></li>
+							<li class="modal" onclick="Modal(41)"><div class="list_item"><h4 class="list_item_text">ゲーセン</h4></div></li>
+						</ul>
+			</div>
+			<!-- 9 -->
+			<div class="main_contents" id="block09">
+				<h2 class="main_contents_title" id="main_contents_title_9">#上から目線</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">自身のコメントに対し何故か上から目線で言ってくる。<br>知識を披露して指摘してくる時もあるが、テレビで得た知識などが多いため情報が薄いこともある。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(42)"><div class="list_item"><h4 class="list_item_text">薬</h4></div></li>
+							<li class="modal" onclick="Modal(43)"><div class="list_item"><h4 class="list_item_text">苦手</h4></div></li>
+							<li class="modal" onclick="Modal(44)"><div class="list_item"><h4 class="list_item_text">作業</h4></div></li>
+							<li class="modal" onclick="Modal(45)"><div class="list_item"><h4 class="list_item_text">トレード</h4></div></li>
+						</ul>
+			</div>
+			<!-- 10 -->
+			<div class="main_contents" id="block10">
+				<h2 class="main_contents_title" id="main_contents_title_10">#質問</h2>
+				<div class="main_contents_text_box">
+					<h4 class="main_contents_text" id="main_contents_text">純粋に質問してくる。<br>質問自体悪いことではないが、全然知らない人に対し急に質問をしたり、質問の内容によっては失礼に感じることもあるため、送る側は状況をよく見る必要がある。</h4>
+				</div>
+						<ul class="list_container">
+							<li class="modal" onclick="Modal(46)"><div class="list_item"><h4 class="list_item_text">映画</h4></div></li>
+							<li class="modal" onclick="Modal(47)"><div class="list_item"><h4 class="list_item_text">画像</h4></div></li>
+							<li class="modal" onclick="Modal(48)"><div class="list_item"><h4 class="list_item_text">かっこいい</h4></div></li>
+							<li class="modal" onclick="Modal(49)"><div class="list_item"><h4 class="list_item_text">友達と</h4></div></li>
+							<li class="modal" onclick="Modal(50)"><div class="list_item"><h4 class="list_item_text">ご満悦</h4></div></li>
+							<li class="modal" onclick="Modal(51)"><div class="list_item"><h4 class="list_item_text">久しぶりに</h4></div></li>
+							<li class="modal" onclick="Modal(52)"><div class="list_item"><h4 class="list_item_text">面倒</h4></div></li>
+						</ul>
+			</div>
+		</main>
+	<footer class="footer">
+		<nav class="footer_nav">
+			<ul>
+				<li><a href="index.html"><h6>MISSNSとは</h6></a></li>
+				<li class="line"><a href="main.html" style="color: #662D91;"><h6>図鑑</h6></a></li>
+				<li><a href="ranking.php"><h6>ダメねランキング</h6></a></li>
+			</ul>
+			<small class="footer_nav_right">(c)missns by keigo fukushima</small>
+		</nav>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/create_modal.js"></script>
+	<script type="text/javascript" src="js/create_modal_help.js"></script>
+	<script type="text/javascript" src="js/fade_anime.js"></script>
+	<script type="text/javascript" src="js/t.min.js"></script>
+	<script type="text/javascript" src="js/typer.js"></script>
+	<script type="text/javascript" src="ajax/insert.js"></script>
+	<script type="text/javascript" src="ajax/delete.js"></script>
+	<script type="text/javascript" src="js/remove.js"></script>
+</body>
+
+</html>
