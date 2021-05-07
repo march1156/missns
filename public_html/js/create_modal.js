@@ -8,7 +8,6 @@ function Modal(num){
   var local_mid = localStorage.getItem("id");
   if(local_mid !== null){
     var Check = 'md'+Num+',';
-    //ローカルストレージの値からmidが入ってるか検索　ここは本来　checkです　検証でこうなってます
     var result = local_mid.indexOf(Check);
   }
   //タグを生成
@@ -24,7 +23,6 @@ function Modal(num){
   //indexofが値が入ってないなら"-1"を返すので
   if(result !== -1){
     box_button[0].insertAdjacentHTML('beforeend','<div id="button"><img class="delete_btn" name="submit" src="./images/icon/button_del.svg" style="width=35px;height:35px;"></div>');
-    // return false;
   }else{
     box_button[0].insertAdjacentHTML('beforeend','<div id="button"><img class="insert_btn" name="submit" src="./images/icon/button_in.svg" style="width=35px;height:35px;"></div>');
   };
@@ -34,6 +32,4 @@ function Modal(num){
   var modal = document.getElementById(mid);
   modal.style.display = 'block';
   modal.animate([{opacity: '0'}, {opacity: '1'}], 200);
-  // return false;
-  console.log('2');
 }

@@ -24,7 +24,6 @@ try{
     //DB接続オブジェクト
     //PDO…PHP Data Object
     $pdo = new PDO($dsn, $db_user, $db_password);
-    //let logo = getElementById('id');
 
     //PDOの設定変更
     $pdo->setAttribute(
@@ -74,23 +73,5 @@ try{
     //header('Location: error.html');
     //exit;
 }
-
-//echo '<pre>';
-//print_r($users);
-// $rank = [];
-// $i=1;
-// foreach( $post as $posts ){
-//     // echo $posts["id"], $posts["age"], '<br>';
-
-//     $rank[$i] = [
-//         'id' => $posts['reply_id'],
-//         'count' => $posts['COUNT( reply_id )'],
-//         'rank' => $posts['RANK() OVER(ORDER BY reply_id DESC)'],
-//     ];
-//     // var_dump(array($rank)).'<br>';
-//     $i++;
-// };
-// print_r($rank);
-
 
 

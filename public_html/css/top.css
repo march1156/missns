@@ -15,7 +15,6 @@ html{
 }
 body{
 	font-family: "ヒラギノ丸ゴ ProN","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",Helvetica, Arial, "Hiragino Kaku Gothic ProN", sans-serif,"ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro",helvetica,"游ゴシック","Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
-	/* background-color: #fbfbfd; */
 	background-color: #fff;
 	color: #4D4D4D;
 	min-width: 320px;
@@ -55,7 +54,6 @@ p{
 	line-height: 3rem;
 }
 li{
-	/* font-size: 2.2rem; */
 	list-style: none;
 }
 a{
@@ -137,13 +135,10 @@ b{
 /* アニメーション */
 .header_main{
 	opacity: 0;
-	/* top: 40%; */
 	transition: all .8s ease;
 }
 .header_main.show{
 	opacity: 1;
-	/* top: 50%; */
-	/* transform: none; */
 }
 
 /* メインセクション */
@@ -161,7 +156,6 @@ b{
 }
 /* サブテキスト */
 .main_contents_text_box{
-	/* display: inline-block; */
 	background-color: #8A43C6;
 	width: 100vw;
 	height: 2rem;
@@ -199,7 +193,6 @@ b{
 	height: 20rem;
 }
 .list_item{
-	/* border: #9e3d8a 1px solid; */
 	position: relative;
 	height: 100%;
 	white-space: wrap;
@@ -232,8 +225,6 @@ b{
 	transition: 0.5s;
 }
 .list_item::before{
-	/* border-top: solid 3px #9e3d8a;
-	border-left: solid 3px #9e3d8a; */
 	top: 0;
 	left: 0;
 	transition: 0.5s;
@@ -250,8 +241,6 @@ b{
 	opacity: 0.3;
 }
 .list_item::after{
-	/* border-right: solid 3px #9e3d8a;
-	border-bottom: solid 3px #9e3d8a; */
 	bottom: 0;
 	right: 0;
 	transition: 0.5s;
